@@ -1,16 +1,18 @@
-import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import Gallery from "./Gallery";
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
+import beastArr from "./Data";
 
-function App() {
+console.log("hello");
+export default function App() {
   return (
-    <div>
+    <div className="Gallery">
       <Header />
-      <Gallery />
+      <main>
+        <Gallery beasts={beastArr} />
+      </main>
       <Footer />
     </div>
   );
 }
-
-export default App;
