@@ -1,6 +1,6 @@
 import React from "react";
 
-function HornedBeast(props) {
+export default function HornedBeast(props) {
   return (
     <div>
       <h2>{props.title}</h2>
@@ -9,5 +9,3 @@ function HornedBeast(props) {
     </div>
   );
 }
-
-export default HornedBeast;

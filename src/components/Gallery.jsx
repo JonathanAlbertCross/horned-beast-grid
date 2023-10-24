@@ -1,7 +1,6 @@
-import React from "react";
 import HornedBeast from "./HornedBeast";
 
-function Gallery() {
+export default function Gallery() {
   const hornedBeastsData = [
     {
       title: "Markhor",
@@ -30,5 +29,3 @@ function Gallery() {
     </div>
   );
 }
-
-export default Gallery;

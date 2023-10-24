@@ -1,11 +1,7 @@
-import React from "react";
-
-function Footer() {
+export default function Footer() {
   return (
     <footer>
-      <p>Author: Your Name</p>
+      <p>MAde by moi - Jonathan</p>
     </footer>
   );
 }
-
-export default Footer;
