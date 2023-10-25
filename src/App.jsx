@@ -1,16 +1,21 @@
 import "./App.css";
-import Header from "./components/Header";
+import HeaderofHorns from "./components/Header";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
-import beastArr from "./Data";
+import beastArr from "./components/Data";
+import { useState } from "react";
 
-console.log("hello");
 export default function App() {
+  const [showModal, setShowModel] = useState(false);
+
+  function handleShowModal() {
+    setShowModel(!showModal);
+  }
   return (
     <div className="Gallery">
-      <Header />
+      <HeaderofHorns />
       <main>
-        <Gallery beasts={beastArr} />
+        <Gallery hornedBeastsData={beastArr} />
       </main>
       <Footer />
     </div>

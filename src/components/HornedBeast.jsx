@@ -2,16 +2,21 @@ import { useState } from "react";
 
 export default function HornedBeast(props) {
   const [likes, setLikes] = useState(0);
-
-  function handleLikes() {
+  function handleClicks() {
     setLikes(likes + 1);
+    console.log("hello");
   }
   return (
     <div className="animals">
       <h2>{props.title}</h2>
-      <img src={props.imageUrl} alt={props.title} onClick={props.handleLikes} />
+      <img
+        src={props.image_url}
+        alt={props.title}
+        onClick={props.handleLikes}
+      />
       <p>{props.description}</p>
       <p>Favourites: {props.likes} </p>
+      <p>onClick={handleClicks}</p>
     </div>
   );
 }
