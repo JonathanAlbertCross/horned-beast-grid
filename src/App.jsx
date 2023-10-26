@@ -15,9 +15,13 @@ export default function App() {
     <div className="Gallery">
       <HeaderofHorns />
       <main>
-        <Gallery hornedBeastsData={beastArr} />
+        <Gallery
+          hornedBeastsData={beastArr}
+          handleShowModal={handleShowModal}
+        />
       </main>
       <Footer />
+      {showModal && <p>I am a modal</p>}
     </div>
   );
 }
