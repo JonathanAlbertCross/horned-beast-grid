@@ -47,16 +47,22 @@ body {
   color: white;
   display: flex;
   justify-content: space-between;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 img {
-  width: 500px;
+  width: 400px;
   height: 100%;
   border: 30px solid white;
 }
 
-.data.title {
-  background-color: aliceblue;
+.animals {
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  color: #0b0b0b;
+  padding: 10px 0px 30px 0px;
+  margin: 15px;
 }
 
 h1 {
@@ -64,4 +70,33 @@ h1 {
   background-color: rgb(255, 255, 255);
   color: #0b0b0b;
   padding: 30px;
+}
+
+.titleCSS {
+  font-size: 50px;
+  margin: 20px 0px 0px 0px;
+}
+
+button {
+  padding: 20px;
+  margin: 5px;
+  background-color: white;
+  color: #0b0b0b;
+}
+
+header {
+  color: rgb(230, 55, 55);
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(248, 248, 248, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(11, 11, 11);
 }
